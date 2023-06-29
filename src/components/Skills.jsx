@@ -9,7 +9,7 @@ import Node from "../assets/node.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
-import Git from "../assets/git.webp";
+import Git from "../assets/git.png";
 import Postman from "../assets/postman.png";
 import Redux from "../assets/redux.png";
 
