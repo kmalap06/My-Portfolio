@@ -122,7 +122,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href={"/"}
-              download="Mike Resume"
+              download="Kedar Resume"
               rel="noreferrer"
               target="_blank"
             >
