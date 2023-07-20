@@ -15,20 +15,17 @@ import Redux from "../assets/redux.png";
 
 const Skills = () => {
   return (
-    <div
-      name="skills"
-      className="w-full sm:h-screen bg-[#0a192f] text-gray-300"
-    >
+    <div name="skills" className="w-full sm:h-screen text-gray-300">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
+          <p className="text-4xl font-bold inline border-b-4 text-slate-200 border-sky-300 ">
             Skills
           </p>
           <p className="py-4 text-lg">These are the tools I use</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-6 gap-4 text-center py-8">
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
             <p className="my-4">HTML</p>
@@ -47,7 +44,7 @@ const Skills = () => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="React icon" />
-            <p className="my-4">REACT</p>
+            <p className="my-4">REACT JS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={GitHub} alt="Github icon" />
@@ -75,7 +72,7 @@ const Skills = () => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Redux} alt="Tailwind icon" />
-            <p className="my-4">Redux</p>
+            <p className="my-4">Redux Toolkit</p>
           </div>
         </div>
       </div>

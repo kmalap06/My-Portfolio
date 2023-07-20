@@ -10,37 +10,40 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-auto p-4 sm:px-20 flex justify-between items-center text-white bg-slate-950">
       <div>
-        <span className="px-10 font-extrabold text-pink-700 text-4xl">
-          Kedar Malap
-        </span>
+        <span className="px-10 font-extrabold text-[2.5em]">Portfolio.</span>
       </div>
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="hover:text-gray-500">
+        <li className={styles.hoverEffect}>
           <Link to="home" smooth={true} duration={500}>
             Home
+            <div className={styles.bottomBorder}></div>
           </Link>
         </li>
-        <li className="hover:text-gray-500">
+        <li className={styles.hoverEffect}>
           <Link to="about" smooth={true} duration={500}>
             About
+            <div className={styles.bottomBorder}></div>
           </Link>
         </li>
-        <li className="hover:text-gray-500">
+        <li className={styles.hoverEffect}>
           <Link to="skills" smooth={true} duration={500}>
             Skills
+            <div className={styles.bottomBorder}></div>
           </Link>
         </li>
-        <li className="hover:text-gray-500">
+        <li className={styles.hoverEffect}>
           <Link to="work" smooth={true} duration={500}>
             Work
+            <div className={styles.bottomBorder}></div>
           </Link>
         </li>
-        <li className="hover:text-gray-500">
+        <li className={styles.hoverEffect}>
           <Link to="contact" smooth={true} duration={500}>
             Contact
+            <div className={styles.bottomBorder}></div>
           </Link>
         </li>
       </ul>
@@ -55,7 +58,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center gap-10"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center gap-10 opacity-100 z-10"
         }
       >
         <li className="text-4xl">
@@ -92,9 +95,9 @@ const Navbar = () => {
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-slate-100"
               href="https://linkedin.com/in/kedarmalap"
             >
               Linkedin <FaLinkedin size={30} />
@@ -102,7 +105,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-slate-100"
               href="https://github.com/kmalap06"
             >
               Github <FaGithub size={30} />
@@ -133,6 +136,11 @@ const Navbar = () => {
       </div>
     </div>
   );
+};
+
+const styles = {
+  hoverEffect: "hover:text-sky-400 hover:scale-110 duration-500",
+  bottomBorder: "border-b-[3px] border-b-sky-300 w-[75%]",
 };
 
 export default Navbar;
